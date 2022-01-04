@@ -45,6 +45,7 @@ a {
     background-image: url("../img/preloader2.GIF");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: 500px 500px;
     height: 100%;
     position: absolute;
     width: 100%;
@@ -168,6 +169,8 @@ header {
     background:url("../img/bg_slilder-1.jpg") ;
     background-attachment:fixed;
     background-size:cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
     height: 100%;
     color: #2D6B87;
     transition: all 0.35s ease 0s;
@@ -254,12 +257,14 @@ header .header-content {
 	background-color: #E2E1E1;
     background:url("../img/maharishiji.jpg") ;
     background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size:cover;
-    font-size:20px !important;
+    font-size:20px;
     position:relative;
     padding: 120px 0;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 #about::before {
     background:rgba(255, 255, 255, 0.5);
@@ -272,7 +277,7 @@ header .header-content {
 }
 #about h1 {
     color: #A94913;
-    font-size: 42px !important;
+    font-size: 42px;
 	font-family: "Oswald";
 }
 #about h1 span {
@@ -397,7 +402,7 @@ a:hover {
 #how-it-works {
     padding: 120px 0 0;  
      width: 100%;   
-     height: 100%;
+     height: auto;
 }
 #how-it-works::before {
     background:rgba(255, 255, 255, 0.5);
@@ -418,7 +423,7 @@ a:hover {
 #Screenshots {
     padding: 120px 0 0;  
      width: 100%;   
-     height: 100%;
+     height: auto;
      position:relative;
      background: linen none repeat scroll 0 0;
 }
@@ -427,6 +432,8 @@ a:hover {
     background:url("../img/credits_bg-01.png") ;
     background-attachment:fixed;
     background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100%;
     padding: 60px 0 0px;
     position: relative;
@@ -521,7 +528,7 @@ height:272px;
 {
      padding: 120px 0 ;  
      width: 100%;   
-     height: 100%;
+     height: auto;
      position:relative;
 }
 .price-wrapper .price-title {
@@ -555,8 +562,8 @@ height:272px;
 }
 .price-wrapper .value-box .value {
     display: inline-block;
-    font-size: 60px;
-    line-height: 38px;
+    font-size: 48px;
+    /*line-height: 38px;*/
     position: relative;
     vertical-align: top;
 	font-family: "Oswald";
@@ -771,7 +778,7 @@ height:272px;
     padding: 20px 0;
 }
 .navbar-collapse {
-    background: #ff4c00;
+    background: rgba(218, 201, 201,0.40);
 }
 .textcenter.animated img {
     width: 50% !important;
@@ -781,42 +788,6 @@ height:272px;
 }
 #how-it-works {
     padding: 80px 0;
-}
-.angle::before {
-    border-bottom: 72px solid #333;
-    border-right: 600px solid transparent;
-    left: 0;
-}
-.angle::before, .angle::after {
-    bottom: 0;
-    content: "";
-    height: 0;
-    position: absolute;
-    width: 0;
-    z-index: 4;
-}
-.angle::after {
-    border-bottom: 72px solid #333;
-    border-left: 600px solid transparent;
-    right: 0;
-}
-.angle2::before {
-    border-top: 72px solid #333;
-    border-right: 600px solid transparent;
-    left: 0;
-}
-.angle2::before, .angle2::after {
-    top: 0;
-    content: "";
-    height: 0;
-    position: absolute;
-    width: 0;
-    z-index: 4;
-}
-.angle2::after {
-    border-top: 72px solid #333;
-    border-left: 600px solid transparent;
-    right: 0;
 }
 }
 @media (min-width:768px) and (max-width:1024px) {
@@ -937,7 +908,7 @@ height:272px;
     padding: 20px 0;
 }
 .navbar-collapse {
-    background: #ff4c00;
+    background: rgba(218, 201, 201,0.40);
 }
 .textcenter.animated img {
     width: 50% !important;
@@ -983,6 +954,13 @@ height:272px;
     border-top: 30px solid #333;
     border-left: 480px solid transparent;
     right: 0;
+}
+    .price-wrapper {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      }
+
 }
 }
 @media (max-width:360px) 
