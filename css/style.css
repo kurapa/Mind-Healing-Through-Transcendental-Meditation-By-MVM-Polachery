@@ -90,7 +90,7 @@ a {
      -moz-transition: all 0.35s ease 0s;
 }
 nav.affix {
-    background: rgba(218, 201, 201, 0.5);
+    background: #E5D4CF;
     padding:5px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -112,6 +112,8 @@ nav.affix-top {
     color: #0C3C5F;
     font-weight: bolder;
     text-align:center;
+    margin-right: 3px;
+    margin-left:3px;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -123,17 +125,22 @@ nav.affix-top {
     background-color: none;
     color: #0C3C5F;
     font-weight: bolder;
-    border-bottom: solid #0C3C5F 3px;
+    border-bottom: solid #0C3C5F 2px;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     background-color: transparent;
     border-radius: 0px;
     color: #0C3C5F;
     font-weight: bolder;
-    border-bottom: solid #0C3C5F 3px;
+    border-bottom: solid #0C3C5F 2px;
     -ms-border-radius:;
     -o-border-radius:;
 }
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#008000' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+.navbar-toggler { border-color: #008000; }
+
 
 /*HEADER STYLES*/
 .headding
@@ -267,7 +274,7 @@ header .header-content {
     height: auto;
 }
 #about::before {
-    background:rgba(255, 255, 255, 0.5);
+    background:rgba(255, 255, 255, 0.6);
     content:"";
     position:absolute;
     top:0;
@@ -430,6 +437,7 @@ a:hover {
 /*-------- contact --------------*/
 #contact {
     background:url("../img/credits_bg-01.png") ;
+    
     background-attachment:fixed;
     background-size:cover;
     background-repeat: no-repeat;
@@ -438,6 +446,15 @@ a:hover {
     padding: 60px 0 0px;
     position: relative;
     width: 100%;
+}
+#contact::before {
+    background:rgba(0, 0, 0, 0.6);
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 #contact .btn-block {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -778,7 +795,10 @@ height:272px;
     padding: 20px 0;
 }
 .navbar-collapse {
-    background: rgba(218, 201, 201,0.40);
+    background: Transparent;
+}
+.navbar-default {
+    background: #E5D4CF none repeat scroll 0 0;
 }
 .textcenter.animated img {
     width: 50% !important;
@@ -908,8 +928,12 @@ height:272px;
     padding: 20px 0;
 }
 .navbar-collapse {
-    background: rgba(218, 201, 201,0.40);
+    background: Transparent;
 }
+.navbar-default {
+    background: #E5D4CF none repeat scroll 0 0;
+}
+
 .textcenter.animated img {
     width: 50% !important;
 }
@@ -960,6 +984,7 @@ height:272px;
         display: block;
         margin-bottom: 20px;
       }
+
 
 }
 }
